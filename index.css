@@ -1,0 +1,67 @@
+:root {
+    font-family: sans-serif;
+    --color1: rgb(16, 185, 115);
+    --color2: rgb(12, 176, 205);
+    --color3: rgb(0, 82, 205);
+}
+
+#side-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background: linear-gradient(var(--color1),
+                                var(--color2),
+                                var(--color3));
+}
+
+#home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#plot-header {
+    color: var(--color2);
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#plot-container {
+    width: 700px;
+    height: 400px;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+button {
+    background: linear-gradient(235deg,
+                                var(--color1) 20%,
+                                var(--color2) 50%,
+                                var(--color3)) 70%;
+    background-size: 200%;
+    background-position: 50%;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+    margin: 0 60px;
+    transition-duration: background-position 4s;
+}
+
+button:hover {
+    background-position: 100% 0;
+}
