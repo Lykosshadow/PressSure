@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PressSure</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
@@ -14,8 +15,14 @@
 
     <main>
         <div id="home-page">
+            <h1>Welcome to PressSure</h1>
+            <p></p>
+
             <h1 id="plot-header">Your Previous Results</h1>
-            <div class="plot-container"></div>
+            <div class="plot-container">
+                <canvas id="pressure-chart"></canvas>
+            </div>
+            
             <div id="button-container">
                 <a href="/pages/record.html">
                     <button>Record Pressure</button>
@@ -30,7 +37,7 @@
     <footer>
         <p>&copy; 2024 PressSure. All rights reserved.</p>
     </footer>
-    
+
     <script src="index.js"></script>
 </body>
 </html>

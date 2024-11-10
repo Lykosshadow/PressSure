@@ -40,3 +40,43 @@
     height: 650px;
     margin-left: 60px;
 }
+
+/* The Modal (hidden by default) */
+.popup {
+    display: none;  /* Hidden by default */
+    position: fixed;  /* Fixed position (sits on top of the page content) */
+    z-index: 1;  /* Sit on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;  /* Full width */
+    height: 100%;  /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);  /* Black background with opacity */
+}
+
+/* Modal Content */
+.popup-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;  /* You can adjust the size of the modal */
+    max-width: 300px;  /* Optional: restrict max width */
+}
+
+/* Optional: Add some styling to the modal text */
+.popup-content p {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Styling for the blood pressure display */
+#blood-pressure {
+    font-size: 48px; /* Increase font size to make the reading more prominent */
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px; /* Optional: Adds slight spacing between the numbers */
+    line-height: 1.5; /* Optional: Adjusts line height for better readability */
+}

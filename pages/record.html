@@ -17,9 +17,11 @@
                     <h1 id="time"></h1>
                     <p id="date"></p>
                 </div>
-                <div class="plot-container"></div>
+                <div class="plot-container">
+                    <div id="blood-pressure">Blood Pressure: -- / -- mmHg</div>
+                </div>
                 <div id="button-container">
-                    <button>Start</button>
+                    <button id="start-button">Start</button>
                     <a href="trends.html">
                         <button>View Full Trends</button>
                     </a>
@@ -30,10 +32,16 @@
         </div>
     </main>
 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Getting blood pressure...</p>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 PressSure. All rights reserved.</p>
     </footer>
-    
+
 </body>
 <script src="../index.js"></script>
 <script src="record.js"></script>
