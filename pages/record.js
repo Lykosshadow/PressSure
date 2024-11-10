@@ -70,7 +70,32 @@ function updateBloodPressureReading() {
     // Update the DOM with the new readings
     document.getElementById("Sys-pressure").innerText = systolic;
     document.getElementById("Dia-pressure").innerText = diastolic;
+
+    // Get the element to change background color (the #recorder element)
+    const recorder = document.getElementById('blood-pressure');
+
+    // Change the background color based on the blood pressure values
+    if (systolic < 120 && diastolic < 80) {
+        // Normal blood pressure
+        recorder.style.backgroundColor = 'green';  // Normal: Green
+    } else if (systolic >= 120 && systolic <= 129 && diastolic < 80) {
+        // Elevated blood pressure (Medium)
+        recorder.style.backgroundColor = 'yellow';  // Medium: Yellow
+    } else if ((systolic >= 130 && systolic <= 139) || (diastolic >= 80 && diastolic <= 89)) {
+        // Hypertension Stage 1
+        recorder.style.backgroundColor = 'orange';  // Stage 1: Orange
+    } else if (systolic >= 140 || diastolic >= 90) {
+        // Hypertension Stage 2 (High)
+        recorder.style.backgroundColor = 'red';  // High: Red
+    } else {
+        // Default case if no condition matches (you could make this gray or white)
+        recorder.style.backgroundColor = 'white';
+    }
 }
+
+// You can call this function on an interval, button click, or other trigger:
+updateBloodPressureReading();  // Call it once to test the functionality
+
 
 function updatePulseReading() {
     // Generate a random pulse value between 60 and 150 bpm
@@ -79,3 +104,4 @@ function updatePulseReading() {
     // Update the DOM with the new pulse value
     document.getElementById("pulse-value").innerText = `${pulse} bpm`;
 }
+
