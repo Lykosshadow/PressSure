@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - PressSure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+    <nav id="side-bar">
+        <i class="fa fa-home" id="home-icon"></i>
+        <i class="fa fa-gear" id="settings-icon"></i>
+    </nav>
+
+    <main class="settings-container">
+        <h1>App Settings</h1>
+
+         <!-- Profile Editor -->
+        <h2>Edit Profile</h2>
+        <section class="profile-button-section">
+            <a href="profile.html">
+                <button class="profile-button">Go to Profile</button>
+            </a>
+
+        <!-- Theme Selection -->
+        <section class="setting-section">
+            <h2>Theme</h2>
+            <p>Choose your preferred theme:</p>
+            <select id="theme-selector">
+                <option value="light">Light Theme</option>
+                <option value="dark">Dark Theme</option>
+            </select>
+        </section>
+
+        <!-- Notification Preferences -->
+        <section class="setting-section">
+            <h2>Notifications</h2>
+            <p>Enable/Disable notifications:</p>
+            <label for="notifications-toggle">Enable Notifications</label>
+            <input type="checkbox" id="notifications-toggle" checked>
+        </section>
+
+        <!-- Language Preferences -->
+        <section class="setting-section">
+            <h2>Language</h2>
+            <p>Select your preferred language:</p>
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+        </section>
+
+        <!-- Save Settings Button -->
+        <section class="setting-section">
+            <button id="save-settings-btn">Save Settings</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PressSure. All rights reserved.</p>
+    </footer>
+
+    <script src="settings.js"></script>
+</body>
+
+</html>

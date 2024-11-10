@@ -1,3 +1,4 @@
+/* General styles in index.css */
 :root {
     font-family: sans-serif;
     --color1: rgb(16, 185, 115);
@@ -5,56 +6,35 @@
     --color3: rgb(0, 82, 205);
 }
 
-/* Sidebar Styling */
 #side-bar {
-    position: fixed; /* Fixed sidebar */
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     top: 0;
     left: 0;
-    width: 100px; /* Sidebar width */
-    height: 100vh; /* Full height of the screen */
+    width: 100px;
+    height: 100vh;
     background: linear-gradient(225deg,
                                 var(--color1),
                                 var(--color2),
                                 var(--color3));
-    z-index: 10; /* Ensure sidebar stays above content */
-    padding-top: 75px; /* Space for the icons */
 }
 
-/* Icons inside the sidebar */
 .fa {
     transform: scale(2.75);
-    margin-bottom: 50px; /* Spacing between icons */
+    margin-top: 75px;
     color: white;
-    cursor: pointer;
 }
 
-/* Body - Flexbox Layout */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least full height */
-}
-
-/* Main Content Styling */
-main {
-    margin-left: 120px; /* Push content to the right of the sidebar */
-    padding: 20px;
-    flex: 1; /* Allow the main content to grow and push footer down */
-    overflow: auto; /* Allow scrolling if content overflows */
-}
-
-/* Home page */
-#home-page {
+#home-page, .profile-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-/* Header on the home page */
+/* Shared Styles for Home Page and Profile */
 #plot-header {
     color: var(--color2);
     font-weight: 800;
@@ -62,7 +42,6 @@ main {
     margin-bottom: 50px;
 }
 
-/* Plot container styling */
 .plot-container {
     width: 700px;
     height: 400px;
@@ -72,14 +51,12 @@ main {
     margin-bottom: 50px;
 }
 
-/* Button container on the home page */
 #button-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-/* Button styling */
 button {
     background: linear-gradient(235deg,
                                 var(--color1) 20%,
@@ -103,11 +80,72 @@ button:hover {
     background-position: 100% 0;
 }
 
-/* Footer Styling */
-footer {
-    margin-top: auto; /* Push the footer to the bottom */
-    text-align: center;
-    background-color: #f1f1f1;
+/* Profile Page Specific Styles */
+.profile-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2, .edit-profile h2 {
+    font-size: 24px;
+    color: var(--color3);
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.edit-profile form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edit-profile label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.edit-profile input {
+    width: 100%;
     padding: 10px;
-    color: #555;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.edit-profile button {
+    background: linear-gradient(235deg,
+                                var(--color1) 20%,
+                                var(--color2) 50%,
+                                var(--color3)) 70%;
+    background-size: 200%;
+    background-position: 50%;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 3px 4px 6px grey;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.edit-profile button:hover {
+    background-position: 100% 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
