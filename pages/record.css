@@ -15,27 +15,28 @@
 #time-date {
     width: 700px;
     margin-left: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 #time {
-    font-size: 50px;
+    font-size: 60px;
     color: var(--color2);
     margin: 0;
 }
 
 #date {
     color: var(--color2);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+    margin-bottom: 0;
 }
 
-#additional-details {
+.side-panel {
     border: none;
     border-radius: 20px;
     box-shadow: 3px 4px 10px grey;
     width: 350px;
-    height: 635px;
+    height: 650px;
     margin-left: 60px;
 }

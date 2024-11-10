@@ -1,0 +1,32 @@
+#trends-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#side-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#trends-header {
+    color: var(--color2);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#plots-wrapper {
+    margin-top: 55px;
+    margin-left: 35px;
+    margin-right: 90px;
+}
+
+#suggestions {
+    width: 250px;
+    height: 850px;
+    box-shadow: 3px 4px 10px grey;
+    margin-top: 55px;
+    border-radius: 20px;
+}
