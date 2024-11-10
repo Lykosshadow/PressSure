@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PressSure</title>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="../stylesheets/sidebar.css"/>
-    <link rel="stylesheet" href="../stylesheets/plot.css"/>
+    <link rel="stylesheet" href="../index.css"/>
+    <link rel="stylesheet" href="record.css"/>
 </head>
 <body>
     <nav id="side-bar"></nav>
     <main>
-        <div recorder>
-            <div class="plot-container"></div>
+        <div id="recorder-page">
+            <div id="recorder">
+                <div id="time-date">
+                    <h1 id="time"></h1>
+                    <p id="date"></p>
+                </div>
+                <div id="plot-container"></div>
+                <div id="button-container">
+                    <button>Start</button>
+                    <a>
+                        <button>View Full Trends</button>
+                    </a>
+                </div>
+            </div>
+            <div id="additional-details">
+            </div>
         </div>
     </main>
 </body>
+<script src="record.js"></script>
 </html>

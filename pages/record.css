@@ -1,0 +1,41 @@
+#recorder-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+#recorder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#time-date {
+    width: 700px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+#time {
+    font-size: 50px;
+    color: var(--color2);
+    margin: 0;
+}
+
+#date {
+    color: var(--color2);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#additional-details {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px grey;
+    width: 350px;
+    height: 635px;
+    margin-left: 60px;
+}
