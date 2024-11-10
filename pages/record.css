@@ -91,15 +91,16 @@ button:hover {
 
 .popup {
     display: none;  /* Hidden by default */
-    position: relative;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     color: white;
     z-index: 1000;  /* Ensure the popup is above other content */
+
 }
 
 .popup-content {
