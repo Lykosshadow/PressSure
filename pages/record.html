@@ -18,8 +18,21 @@
                     <p id="date"></p>
                 </div>
                 <div class="plot-container">
-                    <div id="blood-pressure">Blood Pressure: -- / -- mmHg</div>
+                    <!-- Blood Pressure Display -->
+                    <div id="blood-pressure">
+                        <span class="label">Blood Pressure</span>
+                        <div id="Sys-pressure" class="pressure-value">--</div> ___________ 
+                        <div id="Dia-pressure" class="pressure-value">--</div> mmHg
+                    </div>
                 </div>
+
+                <!-- Pulse Display -->
+                <div id="Pulse">
+                    <span class="label">Pulse</span>
+                    <div id="pulse-value" class="pulse-value">-- bpm</div>
+                </div>
+
+
                 <div id="button-container">
                     <button id="start-button">Start</button>
                     <a href="trends.html">
