@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PressSure</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="../index.css"/>
     <link rel="stylesheet" href="trends.css"/>
 </head>
@@ -20,6 +21,7 @@
             </div>
             <div id="plots-wrapper">
                 <div id="week-plot" class="plot-container">
+                    <canvas id="trend-chart"></canvas>
                 </div>
                 <div id="month-plot" class="plot-container">
                 </div>
@@ -32,5 +34,6 @@
         <p>&copy; 2024 PressSure. All rights reserved.</p>
     </footer>
 </body>
+<script src="trends.js"></script>
 <script src="../index.js"></script>
 </html>
